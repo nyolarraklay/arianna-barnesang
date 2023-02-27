@@ -4,6 +4,8 @@
 const container = document.querySelector(".barnesang");
 const title = document.querySelector("title");
 const queryString = document.location.search;
+
+console.log(queryString)
 const params = new URLSearchParams(queryString);
 
 console.log(params)
@@ -12,7 +14,9 @@ const id = params.get("id");
 
 console.log(id);
 
-const url = `https://nyolarraklay.github.io/songsforKlay/barnesang.json?${id}`;
+const url = `https://nyolarraklay.github.io/songsforKlay/barnesang-id.json`;
+
+console.log(url)
 
 async function getSong (){
   
@@ -20,9 +24,7 @@ async function getSong (){
     const json = await response.json();
     const songs = json.barnesang;
     
-   
-    console.log(json);
-console.log(songs);
+    console.log(songs)
 
     createHtml(json)
 
