@@ -12,34 +12,36 @@ const id = params.get("id");
 
 console.log(id);
 
-const url = `http://localhost:3000/barnesang/${id}`;
+const url = `https://nyolarraklay.github.io/songsforKlay/barnesang.json?${id}`;
 
 async function getSong (){
   
     const response = await fetch (url);
-    const song = await response.json();
-    const lyrics = song.details;
+    const json = await response.json();
+    const songs = json.barnesang;
+    
    
-    console.log(song);
+    console.log(json);
+console.log(songs);
 
-    createHtml(lyrics)
+    createHtml(json)
 
 }
 getSong ();
  
   
-  function createHtml(lyrics) {
-  title.innerHTML = `${lyrics.title}`;
-  container.innerHTML += `<h1>${lyrics.title}</h1>
+  function createHtml(songs) {
+  title.innerHTML = `${songs.title}`;
+  container.innerHTML += `<h1>${songs.title}</h1>
   <div class="content-container">
-  <img src="${lyrics.image}" alt="${lyrics.title}"/></div>
+  <img src="${songs.image}" alt="${songs.title}"/></div>
   <div class="description">
-  <p>${lyrics.lyrics} </br> ${lyrics.lyricsTwo} </br> ${lyrics.lyrics3} </br> ${lyrics.lyrics4} </br> ${lyrics.lyrics5}</p>
+  <p>${songs.details} </br> ${songs.detailsTwo} </br> ${songs.details3} </br> ${songs.details4} </br> ${songs.details5}</p>
   
   <audio
   autoplay
-  src="${lyrics.audio}">
-      <a href="${lyrics.audio}">
+  src="${songs.audio}">
+      <a href="${songs.audio}">
       </a>
   </audio>
   </div>

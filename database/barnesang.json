@@ -21,7 +21,7 @@
       "title": "Lille Petter Edderkopp",
       "image": "pictures/lillePetterEdderkopp.jpg",
       "details": {
-        "id": 1,
+        "id": 2,
         "title": "Lille Petter Edderkopp",
         "image": "pictures/lillePetterEdderkopp.jpg",
         "lyrics": "Lille Petter Edderkopp han klatret på min hatt. Så begynte det å regne og Petter ned han datt. Så kom solen og skinte på min hatt. Da ble det liv i Petterkopp som klatret på min hatt.",
@@ -29,7 +29,7 @@
         "lyrics3": " ",
         "lyrics4": " ",
         "lyrics5": " ",
-        "audio": "7music/edderkopp.m4a"
+        "audio": "/music/edderkopp.m4a"
       }
     },
     {
@@ -37,7 +37,7 @@
       "title": "Finger Familie",
       "image": "/pictures/fingerFamily.jpeg",
       "details": {
-        "id": 1,
+        "id": 3,
         "title": "Finger Familie",
         "image": "/pictures/fingerFamily.jpeg",
         "lyrics": "Tommelfinger, tommelfinger, hvor er du? Her er jeg, her er jeg! God dag, god dag god dag!",
@@ -54,7 +54,7 @@
       "title": "Små Rumpetroll",
       "image": "/pictures/småRumpetroll.jpeg",
       "details": {
-        "id": 1,
+        "id": 4,
         "title": "Små Rumpetroll",
         "image": "/pictures/småRumpetroll.jpeg",
         "lyrics": "Sma rumpetroll, små rumpetroll er morsomme å se, Sma rumpetroll, små rumpetroll er morsomme å se",
@@ -70,7 +70,7 @@
       "title": "Bæ Bæ Lille Lam",
       "image": "/pictures/bæBæLilleLam.jpeg",
       "details": {
-        "id": 1,
+        "id": 5,
         "title": "Bæ Bæ Lille Lam",
         "image": "/pictures/bæBæLilleLam.jpeg",
         "lyrics": "Bæ Bæ lille lam, har du noe ull? Ja, ja, kjære barn, jeg har kroppen full. Søndagsklær til mor, og to par strømper til bitte lille bror.",
@@ -86,7 +86,7 @@
       "title": "Alle killebukkenne",
       "image": "pictures/alleKillebukkene.jpeg",
       "details": {
-        "id": 1,
+        "id": 6,
         "title": "Alle killebukkenne",
         "image": "pictures/alleKillebukkene.jpeg",
         "lyrics": "Alle killebukkene på haugen sprang,  Spurte om Frida var hjemme. Mamma'n til Frida svarte nei, Og alle Killebukkene de ble så lei. De løp inn i skogen og gjemte seg",
@@ -102,7 +102,7 @@
       "title": "Ride Ride Ranke",
       "image": "/pictures/rideRideRanke.jpeg",
       "details": {
-        "id": 1,
+        "id": 7,
         "title": "Ride Ride Ranke",
         "image": "/pictures/rideRideRanke.jpeg",
         "lyrics": "Ride, ride ranke! Si meg hvor skal veien gå? Bestefar besøk skal få. Ride, ride ranke!",
@@ -118,7 +118,7 @@
       "title": "Hokus Pokus",
       "image": "/pictures/hokusPokus.jpeg",
       "details": {
-        "id": 1,
+        "id": 8,
         "title": "Hokus Pokus",
         "image": "/pictures/hokusPokus.jpeg",
         "lyrics": "Hokus og Pokus, Hei filiokus. Troll ned i esken, Sover du?",
@@ -134,7 +134,7 @@
       "title": "Jeg gikk en Tur på Stien",
       "image": "pictures/tur.jpg",
       "details": {
-        "id": 1,
+        "id": 9,
         "title": "Jeg gikk en Tur på Stien",
         "image": "pictures/tur.jpg",
         "lyrics": "Jeg gikk en tur på stien, Og søkte skogens r.  Da hørte jeg fra lien, En gjøk som gol ko ko, koko koko koKo ko ko ko koko",
@@ -150,7 +150,7 @@
       "title": "Bake Bake Kake",
       "image": "/pictures/bakeBakeKake.jpeg",
       "details": {
-        "id": 1,
+        "id": 10,
         "title": "Bake Bake Kake",
         "image": "/pictures/bakeBakeKake.jpeg",
         "lyrics": " Bake kake søte, dyppe den i fløte,først i fløte, så i vann, så kommer det en gammel mann, som ville kaka prikke med ei lita gullstikke.",

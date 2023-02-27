@@ -1,6 +1,6 @@
 const container = document.querySelector(".breadcrumbs");
 
-const url = "http://localhost:3000/barnesang";
+const url = "https://nyolarraklay.github.io/songsforKlay/barnesang.json";
 
 async function getSongs (){
   
@@ -10,9 +10,11 @@ async function getSongs (){
 
     console.log(json);
 
-  
+    const songs = json.barnesang;
+
+  console.log(songs)
     
-    json.forEach(function(item) {
+    songs.forEach(function(item) {
       container.innerHTML += `<a href = "details.html?id=${item.id}" class="cards"><h1>${item.title}</h1> <img src = "${item.image}"/></a>`
     });
   }
