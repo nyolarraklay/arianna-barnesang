@@ -1,0 +1,53 @@
+body {
+  background: linear-gradient(154deg, blue, #d82e2e, #ca619e);
+}
+
+.barnesang {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(154deg, blue, #d82e2e, #ca619e);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 90px;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 40%;
+}
+
+.cards {
+  flex: 1;
+  margin: 20px 20px;
+  box-shadow: 0px 2px 8px 0px;
+}
+
+.cards img {
+  width: 100%;
+  height: auto;
+}
+
+.cardContent h3 {
+  margin: 15px 0px;
+  font-size: 28px;
+  color: aquamarine;
+  font-family: sans-serif;
+}
+
+.cardContent p {
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0px 10px;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+  color: white;
+}
+
+footer {
+  margin-top: 1em;
+  font-size: 1rem;
+}

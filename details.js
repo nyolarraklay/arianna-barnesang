@@ -1,55 +1,38 @@
-
-
-
 const container = document.querySelector(".barnesang");
-const title = document.querySelector("title");
+
 const queryString = document.location.search;
 
-console.log(queryString)
+console.log(queryString);
 const params = new URLSearchParams(queryString);
 
-console.log(params)
+console.log(params);
 
 const id = params.get("id");
 
 console.log(id);
 
-const url = `https://nyolarraklay.github.io/songsforKlay/barnesang-id.json`;
+import data from "./database/barnesang-id.json" assert { type: "json" };
+const barneSang = data[id];
 
-console.log(url)
+const music = barneSang[0];
+console.log(music);
 
-async function getSong (){
-  
-    const response = await fetch (url);
-    const json = await response.json();
-    const songs = json.barnesang;
-    
-    console.log(songs)
-
-    createHtml(json)
-
-}
-getSong ();
- 
-  
-  function createHtml(songs) {
-  title.innerHTML = `${songs.title}`;
-  container.innerHTML += `<h1>${songs.title}</h1>
-  <div class="content-container">
-  <img src="${songs.image}" alt="${songs.title}"/></div>
-  <div class="description">
-  <p>${songs.details} </br> ${songs.detailsTwo} </br> ${songs.details3} </br> ${songs.details4} </br> ${songs.details5}</p>
-  
-  <audio
-  autoplay
-  src="${songs.audio}">
-      <a href="${songs.audio}">
-      </a>
-  </audio>
-  </div>
-  </div>`
-  }
-
-
-
-
+const cardContainer = document.createElement("div");
+cardContainer.classList.add("cardContainer");
+const cards = document.createElement("div");
+cards.classList.add("cards");
+const songTitle = document.createElement("h3");
+songTitle.innerText = music.title;
+const songImage = document.createElement("img");
+songImage.src = music.image;
+const cardContent = document.createElement("div");
+cardContent.classList.add("cardContent");
+const lyrics = document.createElement("p");
+lyrics.innerText = music.lyrics;
+const audio = document.createElement("audio");
+audio.autoplay = true;
+audio.src = music.audio;
+cardContent.append(songTitle, lyrics, audio);
+cards.append(songImage, cardContent);
+cardContainer.append(cards);
+container.append(cardContainer);

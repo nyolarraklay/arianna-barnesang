@@ -1,26 +1,20 @@
+import data from "./database/barnesang.json" assert { type: "json" };
+
+const barneSang = data.barnesang;
 const container = document.querySelector(".breadcrumbs");
 
-const url = "https://nyolarraklay.github.io/songsforKlay/barnesang.json";
-
-async function getSongs (){
-  
-
-    const response = await fetch (url);
-    const json = await response.json();
-
-    console.log(json);
-
-    const songs = json.barnesang;
-
-  console.log(songs)
-    
-    songs.forEach(function(item) {
-      container.innerHTML += `<a href = "details.html?id=${item.id}" class="cards"><h1>${item.title}</h1> <img src = "${item.image}"/></a>`
-    });
-  }
-
-
-
-getSongs ();
-
-
+barneSang.forEach((song) => {
+  console.log(song);
+  const cardContainer = document.createElement("div");
+  cardContainer.classList.add("cardContainer");
+  const cards = document.createElement("a");
+  cards.classList.add("cards");
+  cards.href = `details.html?id=${song.id}`;
+  const songTitle = document.createElement("h3");
+  songTitle.innerText = song.title;
+  const songImage = document.createElement("img");
+  songImage.src = song.image;
+  cards.append(songImage, songTitle);
+  cardContainer.append(cards);
+  container.append(cardContainer);
+});
