@@ -51,3 +51,12 @@ footer {
   margin-top: 1em;
   font-size: 1rem;
 }
+
+@media (min-width: 150px) and (max-width: 650px) {
+  .cardContainer {
+    width: 80%;
+  }
+  .barnesang {
+    padding: 0px 0px;
+  }
+}
