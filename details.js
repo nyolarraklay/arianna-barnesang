@@ -183,9 +183,7 @@ cards.append(songImage, cardContent);
 cardContainer.append(cards);
 container.append(cardContainer);
 
-useEffect(() => {
-  window.addEventListener("touchstart", () => {
-    document.querySelector(".audio").muted = false;
-    document.querySelector(".audio").play();
-  });
+window.addEventListener("touchstart", () => {
+  document.querySelector(".audio").muted = false;
+  document.querySelector(".audio").play();
 });
