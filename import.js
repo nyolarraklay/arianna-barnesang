@@ -1,50 +1,69 @@
-const container = document.querySelector(".barnesang");
-
-const queryString = document.location.search;
-
-console.log(queryString);
-const params = new URLSearchParams(queryString);
-
-console.log(params);
-
-let id = params.get("id");
-
-console.log(id);
-
-let barneSang = {
-  1: [
-    {
+let barneSanger = [
+  {
+    id: 1,
+    tag: "fugler",
+    title: "Alle Fugler Små Det Er",
+    image: "/pictures/alleFugler.jpeg",
+    details: {
       id: 1,
       title: "Alle Fugler Små Det Er",
       image: "/pictures/alleFugler.jpeg",
       lyrics:
         "Alle fugler små de er kommet nå tilbake! Gjøk og sisik, trost og stær synger alle dage. Ler ka jubler høyt i sky, ringer våren inn på ny. Frost og snø de måtte fly, her er sol og glede!",
+      lyricsTwo: " ",
+      lyrics3: " ",
+      lyrics4: " ",
+      lyrics5: " ",
       audio: "/music/fugler.m4a",
     },
-  ],
-  2: [
-    {
+  },
+  {
+    id: 2,
+    tag: "edderkopper",
+    title: "Lille Petter Edderkopp",
+    image: "pictures/lillePetterEdderkopp.jpg",
+    details: {
       id: 2,
       title: "Lille Petter Edderkopp",
       image: "pictures/lillePetterEdderkopp.jpg",
       lyrics:
         "Lille Petter Edderkopp han klatret på min hatt. Så begynte det å regne og Petter ned han datt. Så kom solen og skinte på min hatt. Da ble det liv i Petterkopp som klatret på min hatt.",
+      lyricsTwo: " ",
+      lyrics3: " ",
+      lyrics4: " ",
+      lyrics5: " ",
       audio: "/music/edderkopp.m4a",
     },
-  ],
-  3: [
-    {
+  },
+  {
+    id: 3,
+    tag: " finger",
+    title: "Finger Familie",
+    image: "/pictures/fingerFamily.jpeg",
+    details: {
       id: 3,
       title: "Finger Familie",
       image: "/pictures/fingerFamily.jpeg",
       lyrics:
-        "Tommelfinger, tommelfinger, hvor er du? Her er jeg, her er jeg! God dag, god dag god dag!, Pekefinger, pekefinger, hvor er du? Her er jeg, her er jeg! God dag, god dag god dag! Langefinger, langefinger, hvor er du? Her er jeg, her er jeg! God dag, god dag god dag! Ringefinger, ringefinger, hvor er du? Her er jeg, her er jeg! God dag, god dag god dag! Lillefinger, lillefinger, hvor er du? Her er jeg, her er jeg! God dag, god dag god dag! Hele handen, hele handen, hvor er du? Her er jeg, her er jeg! God dag, god dag god dag!",
+        "Tommelfinger, tommelfinger, hvor er du? Her er jeg, her er jeg! God dag, god dag god dag!",
+      lyricsTwo:
+        "Pekefinger, pekefinger, hvor er du? Her er jeg, her er jeg! God dag, god dag god dag!",
+      lyrics3:
+        " Langefinger, langefinger, hvor er du? Her er jeg, her er jeg! God dag, god dag god dag!",
+      lyrics4:
+        " Ringefinger, ringefinger, hvor er du? Her er jeg, her er jeg! God dag, god dag god dag!",
+      lyrics5:
+        " Lillefinger, lillefinger, hvor er du? Her er jeg, her er jeg! God dag, god dag god dag! Hele handen, hele handen, hvor er du? Her er jeg, her er jeg! God dag, god dag god dag!",
 
       audio: "/music/fingersang.m4a",
     },
-  ],
-  4: [
-    {
+  },
+  {
+    id: 4,
+    tag: "rumpetrol",
+    title: "Små Rumpetroll",
+    image: "/pictures/småRumpetroll.jpeg",
+    details: {
       id: 4,
       title: "Små Rumpetroll",
       image: "/pictures/småRumpetroll.jpeg",
@@ -60,9 +79,13 @@ let barneSang = {
         " Ko-ak-ak-ak, Ko-ak-ak-ak, Ko-ak-ak-ak, Ko-ak-ak-ak, Ko-ak-ak-ak, Ko-ak-ak-ak,",
       audio: "/music/rumpetroll.m4a",
     },
-  ],
-  5: [
-    {
+  },
+  {
+    id: 5,
+    tag: "lillelam",
+    title: "Bæ Bæ Lille Lam",
+    image: "/pictures/bæBæLilleLam.jpeg",
+    details: {
       id: 5,
       title: "Bæ Bæ Lille Lam",
       image: "/pictures/bæBæLilleLam.jpeg",
@@ -74,9 +97,13 @@ let barneSang = {
       lyrics5: " ",
       audio: "/music/lillelam.m4a",
     },
-  ],
-  6: [
-    {
+  },
+  {
+    id: 6,
+    tag: "killebukkene",
+    title: "Alle killebukkenne",
+    image: "pictures/alleKillebukkene.jpeg",
+    details: {
       id: 6,
       title: "Alle killebukkenne",
       image: "pictures/alleKillebukkene.jpeg",
@@ -89,9 +116,13 @@ let barneSang = {
       lyrics5: " ",
       audio: "/music/killebukkene.m4a",
     },
-  ],
-  7: [
-    {
+  },
+  {
+    id: 7,
+    tag: "ranke",
+    title: "Ride Ride Ranke",
+    image: "/pictures/rideRideRanke.jpeg",
+    details: {
       id: 7,
       title: "Ride Ride Ranke",
       image: "/pictures/rideRideRanke.jpeg",
@@ -107,9 +138,13 @@ let barneSang = {
         " Ride, ride ranke! Nå er hesten ornt`lig trett. Rytteren er god og mett. Ride, ride ranke!",
       audio: "/music/rideranke.m4a",
     },
-  ],
-  8: [
-    {
+  },
+  {
+    id: 8,
+    tag: "hokus",
+    title: "Hokus Pokus",
+    image: "/pictures/hokusPokus.jpeg",
+    details: {
       id: 8,
       title: "Hokus Pokus",
       image: "/pictures/hokusPokus.jpeg",
@@ -121,9 +156,13 @@ let barneSang = {
       lyrics5: " ",
       audio: "/music/hokus.m4a",
     },
-  ],
-  9: [
-    {
+  },
+  {
+    id: 9,
+    tag: "turstien",
+    title: "Jeg gikk en Tur på Stien",
+    image: "pictures/tur.jpg",
+    details: {
       id: 9,
       title: "Jeg gikk en Tur på Stien",
       image: "pictures/tur.jpg",
@@ -138,9 +177,13 @@ let barneSang = {
       lyrics5: " ",
       audio: "/music/kokoko.m4a",
     },
-  ],
-  10: [
-    {
+  },
+  {
+    id: 10,
+    tag: " kake",
+    title: "Bake Bake Kake",
+    image: "/pictures/bakeBakeKake.jpeg",
+    details: {
       id: 10,
       title: "Bake Bake Kake",
       image: "/pictures/bakeBakeKake.jpeg",
@@ -152,32 +195,7 @@ let barneSang = {
       lyrics5: " ",
       audio: "/music/kake.m4a",
     },
-  ],
-};
-console.log(barneSang);
+  },
+];
 
-const music = barneSang[id];
-console.log(music);
-
-const kids = music[0];
-console.log(kids);
-
-const cardContainer = document.createElement("div");
-cardContainer.classList.add("cardContainer");
-const cards = document.createElement("div");
-cards.classList.add("cards");
-const songTitle = document.createElement("h3");
-songTitle.innerText = kids.title;
-const songImage = document.createElement("img");
-songImage.src = kids.image;
-const cardContent = document.createElement("div");
-cardContent.classList.add("cardContent");
-const lyrics = document.createElement("p");
-lyrics.innerText = kids.lyrics;
-const audio = document.createElement("audio");
-audio.autoplay = true;
-audio.src = kids.audio;
-cardContent.append(songTitle, lyrics, audio);
-cards.append(songImage, cardContent);
-cardContainer.append(cards);
-container.append(cardContainer);
+export { barneSanger };
