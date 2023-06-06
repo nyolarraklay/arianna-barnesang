@@ -175,9 +175,17 @@ cardContent.classList.add("cardContent");
 const lyrics = document.createElement("p");
 lyrics.innerText = kids.lyrics;
 const audio = document.createElement("audio");
+audio.classList.add("audio");
 audio.autoplay = true;
 audio.src = kids.audio;
 cardContent.append(songTitle, lyrics, audio);
 cards.append(songImage, cardContent);
 cardContainer.append(cards);
 container.append(cardContainer);
+
+useEffect(() => {
+  window.addEventListener("touchstart", () => {
+    document.querySelector(".audio").muted = false;
+    document.querySelector(".audio").play();
+  });
+});
