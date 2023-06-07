@@ -3,7 +3,7 @@
 }
 
 body {
-  padding: 20px 40px;
+  padding: 0px 40px;
   font-family: sans-serif;
   background: linear-gradient(154deg, blue, #d82e2e, #ca619e);
   display: flex;
@@ -17,7 +17,7 @@ body {
 .container {
   width: 100%;
   max-width: 1000px;
-  margin: 40px auto 0 auto;
+  margin: 0 auto 0 auto;
 }
 
 .breadcrumbs {

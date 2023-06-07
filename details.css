@@ -51,6 +51,17 @@ footer {
   margin-top: 1em;
   font-size: 1rem;
 }
+button {
+  width: 8rem;
+  height: 2.5rem;
+  font-size: 20px;
+  border: 3px solid white;
+  border-radius: 8rem;
+  box-shadow: 2px 4px 11px red;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
 
 @media (min-width: 150px) and (max-width: 650px) {
   .cardContainer {
